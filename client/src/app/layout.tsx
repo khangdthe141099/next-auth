@@ -21,6 +21,7 @@ export default function RootLayout({
 }>) {
   const cookieStore = cookies()
   const sessionToken = cookieStore.get('sessionToken')
+
   return (
     <html lang='en' suppressHydrationWarning>
       <body className={`${inter.className}`}>

@@ -3,7 +3,7 @@ export async function POST(request: Request) {
   const sessionToken = res.sessionToken
   if (!sessionToken) {
     return Response.json(
-      { message: 'Không nhận được session token' },
+      { message: 'Không nhận được session token client' },
       {
         status: 400
       }
